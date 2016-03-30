@@ -1,6 +1,8 @@
 # RubySvgImageGenerator
 
 [![Build Status](https://travis-ci.org/monkeyKoders/ruby_svg_image_generator.svg?branch=master)](https://travis-ci.org/monkeyKoders/ruby_svg_image_generator)
+[![Coverage Status](https://coveralls.io/repos/github/monkeyKoders/ruby_svg_image_generator/badge.svg?branch=master)](https://coveralls.io/github/monkeyKoders/ruby_svg_image_generator?branch=master)
+[![Code Climate](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator/badges/gpa.svg)](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_svg_image_generator`. To experiment with that code, run `bin/console` for an interactive prompt.
 
