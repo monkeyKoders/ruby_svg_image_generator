@@ -1,7 +1,7 @@
 module RubySvgImageGenerator
-  module HumanAvatars
+  class HumanAvatars < RubySvgImageGenerator::Theme
 
-    class Hair < RubySvgImageGenerator::Part
+    class Hair < RubySvgImageGenerator::Theme::Part
 
       A = "#0A0A09"
       B = "#E6D522"
@@ -63,7 +63,7 @@ module RubySvgImageGenerator
           [ 0, 0, 0, 0, 0, 0, 0]
         ],[
           [ 0, 0, 0, B, 0, 0, 0],
-          [ 0, B, 0, B, 0, B, 0],
+          [ 0, B, 0, 0, 0, B, 0],
           [ B, 0, 0, 0, 0, 0, B],
           [ 0, 0, 0, 0, 0, 0, 0],
           [ 0, 0, 0, 0, 0, 0, 0],

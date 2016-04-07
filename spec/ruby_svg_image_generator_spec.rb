@@ -7,7 +7,10 @@ describe RubySvgImageGenerator do
       RubySvgImageGenerator.create_and_save_file "test_#{i}.svg" , "test_#{i}", :theme => RubySvgImageGenerator::T_HUMAN_AVATARS
     end
 
-    ha = RubySvgImageGenerator::HumanAvatars::HumanAvatars.new
+    RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_HUMAN_AVATARS
+    RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_TEST_THEME
+
+    ha = RubySvgImageGenerator::HumanAvatars.new
 
     p ha.get_random_matrix
 

@@ -1,20 +1,20 @@
 module RubySvgImageGenerator
-  module TestTheme
+  class TestTheme < RubySvgImageGenerator::Theme
 
-    class TestPart0 < RubySvgImageGenerator::Part
+    class TestPart0 < RubySvgImageGenerator::Theme::Part
 
       MATRICES = [
         [
-          [ "#ffffff", "#ffffff", "#ffffff", "#ffffff" ],
+          [ "#000", "#000", "#000", "#000" ],
           [ 0, 0, 0, 0 ],
           [ 0, 0, 0, 0 ]
         ],[
           [ 0, 0, 0, 0 ],
           [ 0, 0, 0, 0 ],
-          [ "#ffffff", "#ffffff", "#ffffff", "#ffffff" ]
+          [ "#000", "#000", "#000", "#000" ]
         ],[
           [ 0, 0, 0, 0 ],
-          [ "#ffffff", "#ffffff", "#ffffff", "#ffffff" ],
+          [ "#000", "#000", "#000", "#000" ],
           [ 0, 0, 0, 0 ]
         ]
       ]

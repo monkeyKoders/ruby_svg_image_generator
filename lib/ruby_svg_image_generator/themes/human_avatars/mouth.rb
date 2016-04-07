@@ -1,7 +1,7 @@
 module RubySvgImageGenerator
-  module HumanAvatars
+  class HumanAvatars < RubySvgImageGenerator::Theme
 
-    class Mouth < RubySvgImageGenerator::Part
+    class Mouth < RubySvgImageGenerator::Theme::Part
 
       A = "#BD3C4D"
 

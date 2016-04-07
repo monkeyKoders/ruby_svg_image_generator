@@ -1,7 +1,7 @@
 module RubySvgImageGenerator
   class Theme
 
-    def initialize name, options={}
+    def initialize(name, options={})
       @name = name
       @parts = []
       @matrix = [[]]

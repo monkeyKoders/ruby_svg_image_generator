@@ -2,14 +2,12 @@ Dir.glob(File.dirname(File.absolute_path(__FILE__)) + '/*.rb') {|file| require f
 
 
 module RubySvgImageGenerator
-  module HumanAvatars
-    class HumanAvatars < RubySvgImageGenerator::Theme
+  class HumanAvatars < RubySvgImageGenerator::Theme
 
-      def initialize options={}
-        super "human avatars", options
-        @parts = [] << Face.new << Hair.new << Eyes.new << Mouth.new
-      end
-
+    def initialize options={}
+      super "human avatars", options
+      @parts = [] << Face.new << Hair.new << Eyes.new << Mouth.new
     end
+
   end
 end

@@ -1,11 +1,12 @@
 module RubySvgImageGenerator
-  module HumanAvatars
+  class HumanAvatars < RubySvgImageGenerator::Theme
 
-    class Eyes < RubySvgImageGenerator::Part
+    class Eyes < RubySvgImageGenerator::Theme::Part
 
       A = "#247337"
       B = "#6978DB"
       C = "#73592F"
+      F = "#FF0000"
 
       MATRICES = [
         [
@@ -22,6 +23,15 @@ module RubySvgImageGenerator
           [ 0, 0, 0, 0, 0, 0, 0],
           [ 0, 0, 0, 0, 0, 0, 0],
           [ 0, 0, B, 0, B, 0, 0],
+          [ 0, 0, 0, 0, 0, 0, 0],
+          [ 0, 0, 0, 0, 0, 0, 0],
+          [ 0, 0, 0, 0, 0, 0, 0],
+          [ 0, 0, 0, 0, 0, 0, 0]
+        ],[
+          [ 0, 0, 0, 0, 0, 0, 0],
+          [ 0, 0, 0, 0, 0, 0, 0],
+          [ 0, 0, 0, 0, 0, 0, 0],
+          [ 0, 0, F, 0, F, 0, 0],
           [ 0, 0, 0, 0, 0, 0, 0],
           [ 0, 0, 0, 0, 0, 0, 0],
           [ 0, 0, 0, 0, 0, 0, 0],

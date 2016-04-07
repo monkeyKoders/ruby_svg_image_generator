@@ -1,12 +1,12 @@
-require "ruby_svg_image_generator/version"
-require "ruby_matrix_to_svg"
+require 'ruby_svg_image_generator/version'
+require 'ruby_matrix_to_svg'
 
-require "ruby_svg_image_generator/theme"
-require "ruby_svg_image_generator/part"
+require 'ruby_svg_image_generator/theme'
+require 'ruby_svg_image_generator/part'
 
-require "ruby_svg_image_generator/themes/human_avatars/human_avatars"
-require "ruby_svg_image_generator/themes/test_theme/test_theme"
-require "debugger"
+require 'ruby_svg_image_generator/themes/human_avatars/human_avatars'
+require 'ruby_svg_image_generator/themes/test_theme/test_theme'
+require 'debugger'
 
 module RubySvgImageGenerator
 
@@ -26,7 +26,7 @@ module RubySvgImageGenerator
   # @param filename [string] the full path and filename to save the image svg to
   # @param options [hash] additional options for the image
   #
-  def self.create_and_save_file filename, title, options={}
+  def self.create_and_save_file(filename, title, options={})
 
     # create the svg image string
     svg = create(title, options)
@@ -44,20 +44,18 @@ module RubySvgImageGenerator
   #
   # @param options [hash] additional options for the image
   #
-  def self.create title, options={}
+  def self.create(title, options={})
 
     options = DEFAULT_OPTIONS.merge(options)
 
     # TODO: [srira] Mejorar estructura de clases y modulos para no tener que repetir el namespace del modulo
-    theme = RubySvgImageGenerator.const_get(options[:theme]).const_get(options[:theme]).new options
+    theme = RubySvgImageGenerator.const_get(options[:theme]).new options
 
     # generate the cells matrix with image
     matrix = theme.get_random_matrix
 
     # generate and return the svg string with matrix values
-    return RubyMatrixToSvg.matrix_to_svg title, matrix
+    RubyMatrixToSvg.matrix_to_svg title, matrix
   end
-
-
 
 end

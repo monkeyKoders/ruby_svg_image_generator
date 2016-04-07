@@ -1,7 +1,7 @@
 module RubySvgImageGenerator
-  module TestTheme
+  class TestTheme < RubySvgImageGenerator::Theme
 
-    class TestPart1 < RubySvgImageGenerator::Part
+    class TestPart1 < RubySvgImageGenerator::Theme::Part
 
       MATRICES = [
         [

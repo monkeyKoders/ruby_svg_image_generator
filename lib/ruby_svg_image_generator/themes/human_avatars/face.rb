@@ -1,7 +1,7 @@
 module RubySvgImageGenerator
-  module HumanAvatars
+  class HumanAvatars < RubySvgImageGenerator::Theme
 
-    class Face < RubySvgImageGenerator::Part
+    class Face < RubySvgImageGenerator::Theme::Part
 
       A = "#574130"
       B = "#EDB07B"
