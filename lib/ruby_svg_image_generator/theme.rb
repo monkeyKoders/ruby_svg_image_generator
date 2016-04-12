@@ -1,12 +1,18 @@
 module RubySvgImageGenerator
   class Theme
 
+    include Enumerable
+
     def initialize(name, n_cols, n_rows, options={})
       @name = name
       @n_cols = n_cols
       @n_rows = n_rows
       @parts = []
       @matrix = [[]]
+    end
+
+    def each &block
+      @parts.each{|part| block.call(part)}
     end
 
     def get_matrix(options={})

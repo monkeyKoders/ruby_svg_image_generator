@@ -3,6 +3,7 @@ require 'ruby_matrix_to_svg'
 
 require 'ruby_svg_image_generator/theme'
 require 'ruby_svg_image_generator/part'
+require 'ruby_svg_image_generator/color_part'
 
 require 'ruby_svg_image_generator/themes/human_avatars/human_avatars'
 require 'ruby_svg_image_generator/themes/test_theme/test_theme'

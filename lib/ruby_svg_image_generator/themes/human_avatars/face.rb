@@ -1,54 +1,33 @@
 module RubySvgImageGenerator
   class HumanAvatars < RubySvgImageGenerator::Theme
 
-    class Face < RubySvgImageGenerator::Theme::Part
+    class Face < RubySvgImageGenerator::Theme::ColorPart
 
-      A = "#574130"
-      B = "#EDB07B"
-
+      COLORS = ["#574130", "#EDB07B", "#73592F", "#FADFB4"]
       MATRICES = [
         [
           [ 0, 0, 0, 0, 0, 0, 0],
-          [ 0, 0, A, A, A, 0, 0],
-          [ 0, A, A, A, A, A, 0],
-          [ A, A, A, A, A, A, A],
-          [ A, A, A, A, A, A, A],
-          [ 0, A, A, A, A, A, 0],
-          [ 0, 0, A, A, A, 0, 0],
-          [ 0, 0, A, A, A, 0, 0]
+          [ 0, 0, 1, 1, 1, 0, 0],
+          [ 0, 1, 1, 1, 1, 1, 0],
+          [ 1, 1, 1, 1, 1, 1, 1],
+          [ 1, 1, 1, 1, 1, 1, 1],
+          [ 0, 1, 1, 1, 1, 1, 0],
+          [ 0, 0, 1, 1, 1, 0, 0],
+          [ 0, 0, 1, 1, 1, 0, 0]
         ],[
           [ 0, 0, 0, 0, 0, 0, 0],
-          [ 0, 0, A, A, A, 0, 0],
-          [ 0, A, A, A, A, A, 0],
-          [ A, A, A, A, A, A, A],
-          [ 0, A, A, A, A, A, 0],
-          [ 0, A, A, A, A, A, 0],
-          [ 0, 0, A, A, A, 0, 0],
-          [ 0, 0, 0, A, 0, 0, 0]
-        ],[
-          [ 0, 0, 0, 0, 0, 0, 0],
-          [ 0, 0, B, B, B, 0, 0],
-          [ 0, B, B, B, B, B, 0],
-          [ B, B, B, B, B, B, B],
-          [ B, B, B, B, B, B, B],
-          [ 0, B, B, B, B, B, 0],
-          [ 0, 0, B, B, B, 0, 0],
-          [ 0, 0, B, B, B, 0, 0]
-        ],[
-          [ 0, 0, 0, 0, 0, 0, 0],
-          [ 0, 0, B, B, B, 0, 0],
-          [ 0, B, B, B, B, B, 0],
-          [ B, B, B, B, B, B, B],
-          [ 0, B, B, B, B, B, 0],
-          [ 0, B, B, B, B, B, 0],
-          [ 0, 0, B, B, B, 0, 0],
-          [ 0, 0, 0, B, 0, 0, 0]
+          [ 0, 0, 1, 1, 1, 0, 0],
+          [ 0, 1, 1, 1, 1, 1, 0],
+          [ 1, 1, 1, 1, 1, 1, 1],
+          [ 0, 1, 1, 1, 1, 1, 0],
+          [ 0, 1, 1, 1, 1, 1, 0],
+          [ 0, 0, 1, 1, 1, 0, 0],
+          [ 0, 0, 0, 1, 0, 0, 0]
         ]
       ]
 
       def initialize options={}
         super "Face"
-        @matrices = MATRICES
       end
 
     end

@@ -21,7 +21,6 @@ module RubySvgImageGenerator
 
       def initialize options={}
         super "test_part_0"
-        @matrices = MATRICES
       end
 
     end

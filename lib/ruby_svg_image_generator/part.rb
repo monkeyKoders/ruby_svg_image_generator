@@ -1,12 +1,21 @@
 module RubySvgImageGenerator
   class Theme
     class Part
+      include Enumerable
       def initialize(name, options={})
         @name = name
       end
 
+      def each &block
+        self.class::MATRICES.each{|part| block.call(part)}
+      end
+
+      def [](index)
+        return self.class::MATRICES[index]
+      end
+
       def get_matrix index
-        self.class::MATRICES[index]
+        self[index]
       end
 
       def get_random_matrix
