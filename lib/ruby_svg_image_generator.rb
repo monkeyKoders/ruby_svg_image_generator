@@ -48,7 +48,6 @@ module RubySvgImageGenerator
 
     options = DEFAULT_OPTIONS.merge(options)
 
-    # TODO: [srira] Mejorar estructura de clases y modulos para no tener que repetir el namespace del modulo
     theme = RubySvgImageGenerator.const_get(options[:theme]).new options
 
     # generate the cells matrix with image

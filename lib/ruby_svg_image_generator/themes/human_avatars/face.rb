@@ -46,9 +46,6 @@ module RubySvgImageGenerator
         ]
       ]
 
-
-
-
       def initialize options={}
         super "Face"
         @matrices = MATRICES

@@ -5,7 +5,7 @@ module RubySvgImageGenerator
   class TestTheme < RubySvgImageGenerator::Theme
 
     def initialize options={}
-      super "test theme", options
+      super "test theme", 3, 3, options
       @parts = [] << TestPart0.new << TestPart1.new
     end
 
