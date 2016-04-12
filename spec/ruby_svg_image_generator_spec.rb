@@ -8,8 +8,8 @@ describe RubySvgImageGenerator do
     end
 
     RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_HUMAN_AVATARS
-    matrix RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_TEST_THEME
-    
+    RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_TEST_THEME
+
 
     ha = RubySvgImageGenerator::HumanAvatars.new
 
