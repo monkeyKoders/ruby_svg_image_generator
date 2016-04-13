@@ -12,7 +12,7 @@ module RubySvgImageGenerator
     end
 
     def each &block
-      @parts.each{|part| block.call(part)}
+      @parts.each{|part| yield part}
     end
 
     def [](index)

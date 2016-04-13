@@ -7,7 +7,7 @@ module RubySvgImageGenerator
       end
 
       def each &block
-        self.class::MATRICES.each{|part| block.call(part)}
+        self.class::MATRICES.each{|part| yield part }
       end
 
       def [](index)
