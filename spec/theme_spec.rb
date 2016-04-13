@@ -50,6 +50,10 @@ shared_examples_for "theme" do
       expect(theme.respond_to?(:[])).to be(true)
     end
 
+    it "[] returns a Part" do
+      expect(theme[0].class).to be < RubySvgImageGenerator::Theme::Part
+    end
+
     describe "Part" do
 
       context "get_random_matrix" do
@@ -97,6 +101,14 @@ shared_examples_for "theme" do
           expect(part.respond_to?(:[])).to be(true)
         end
       end
+
+      it "[] returns a Matrix" do
+        theme.each do |part|
+          expect(part[0].class).to be Array
+          expect(part[0][0].class).to be Array
+        end
+      end
+
     end
   end
 end
