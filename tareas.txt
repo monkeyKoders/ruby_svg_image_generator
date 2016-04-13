@@ -3,14 +3,14 @@ Proyecto gema para "avatares" svg (ruby_svg_image_generator? ruby_svg_avatars?)
 La idea es crear una gema para generar imagenes svg compuestas por piezas.
 Utilizando el concepto ruby_randimage y la gema ruby_matrix_to_svg para generar los svg
 
- 
+
 Cosas por ver y decidir
 
   - Estaria bien que la gente pudiese hacer una PR con un tema nuevo y la gema definiese una interface para ello.
-    De modo que si hay un nuevo tema la demo app automaticamente saque en el selector de temas el nuevo tema, 
+    De modo que si hay un nuevo tema la demo app automaticamente saque en el selector de temas el nuevo tema,
     y si se selecciona que aparezcan todas sus opciones en el formulario sin tener que tocar nada en la demo app.
-  
-    Ejs: 
+
+    Ejs:
       caras o avatares
         - tamaño lienzo (16x16, 16x32, etc )
         - fondo
@@ -26,7 +26,7 @@ Cosas por ver y decidir
         - tamaño lienzo (16x16, 16x32, etc )
         - fondo
         - tallo
-        - ojas
+        - hojas
         - tierra
         - petalos
 
@@ -37,7 +37,7 @@ Cosas por ver y decidir
         - color de piel
         - pezones
         - etc
-        
+
       insectos
       coches
       motos
@@ -47,7 +47,7 @@ Cosas por ver y decidir
   - Podria ser interesante que los temas se saquen a otras gemas por cuestion de tamaño de la misma.
 
 
-INTERFAZ: 
+INTERFAZ:
 Para los iferentes temas habria que decidir una interfaz.
 
 Se me ocurre:
@@ -58,7 +58,3 @@ Se me ocurre:
     - nombre
     - numero
     - array con las posibilidades
-
-
-
-
