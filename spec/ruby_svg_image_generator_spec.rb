@@ -10,7 +10,11 @@ describe RubySvgImageGenerator do
     RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_HUMAN_AVATARS
     RubySvgImageGenerator.create "test", :theme => RubySvgImageGenerator::T_TEST_THEME
 
+
+
     ha = RubySvgImageGenerator::HumanAvatars.new
+
+    ha.each{|part| puts "=======>>" + part.name }
 
     p ha.get_random_matrix
 

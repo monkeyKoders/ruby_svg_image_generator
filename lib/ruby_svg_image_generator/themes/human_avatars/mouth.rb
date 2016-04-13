@@ -29,7 +29,6 @@ module RubySvgImageGenerator
 
       def initialize options={}
         super "Mouth"
-        @matrices = MATRICES
       end
 
     end

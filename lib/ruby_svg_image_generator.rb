@@ -3,10 +3,11 @@ require 'ruby_matrix_to_svg'
 
 require 'ruby_svg_image_generator/theme'
 require 'ruby_svg_image_generator/part'
+require 'ruby_svg_image_generator/color_part'
 
 require 'ruby_svg_image_generator/themes/human_avatars/human_avatars'
 require 'ruby_svg_image_generator/themes/test_theme/test_theme'
-require 'debugger'
+#require 'debugger'
 
 module RubySvgImageGenerator
 
@@ -48,7 +49,6 @@ module RubySvgImageGenerator
 
     options = DEFAULT_OPTIONS.merge(options)
 
-    # TODO: [srira] Mejorar estructura de clases y modulos para no tener que repetir el namespace del modulo
     theme = RubySvgImageGenerator.const_get(options[:theme]).new options
 
     # generate the cells matrix with image
