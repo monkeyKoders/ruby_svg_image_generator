@@ -13,10 +13,8 @@ describe RubySvgImageGenerator do
 
 
     ha = RubySvgImageGenerator::HumanAvatars.new
-    
-    ha.each{|part| puts "=======>>" + part.name }
 
-    ha.parts[2][ha.parts[2].count-1]
+    ha.each{|part| puts "=======>>" + part.name }
 
     p ha.get_random_matrix
 

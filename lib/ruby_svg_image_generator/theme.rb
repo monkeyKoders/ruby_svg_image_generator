@@ -15,6 +15,10 @@ module RubySvgImageGenerator
       @parts.each{|part| block.call(part)}
     end
 
+    def [](index)
+      return @parts[index]
+    end
+
     def get_matrix(options={})
       merge_parts(options[:parts].collect{|part| @parts[part].get_matrix(part) })
     end
@@ -41,10 +45,6 @@ module RubySvgImageGenerator
         end
       end
       matrix
-    end
-
-    def parts
-      @parts
     end
 
     def name

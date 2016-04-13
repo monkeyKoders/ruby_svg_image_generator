@@ -18,7 +18,7 @@ shared_examples_for "theme" do
     context "get_matrix" do
 
       it "returns a matrix" do
-        matrix = theme.get_matrix(:parts => theme.parts.collect{|part| 0 } )
+        matrix = theme.get_matrix(:parts => theme.collect{|part| 0 } )
         p matrix
         expect(matrix.class.name).to eq("Array")
         expect(matrix[0].class.name).to eq("Array")
@@ -38,11 +38,23 @@ shared_examples_for "theme" do
       expect(theme.n_rows).to be > 0
     end
 
+    it "responds to each" do
+      expect(theme.respond_to?(:each)).to be(true)
+    end
+
+    it "responds to count" do
+      expect(theme.count).to be >0
+    end
+
+    it "responds to []" do
+      expect(theme.respond_to?(:[])).to be(true)
+    end
+
     describe "Part" do
 
       context "get_random_matrix" do
         it "returns a random matrix" do
-          theme.parts.each do |part|
+          theme.each do |part|
             matrix = part.get_random_matrix
             expect(matrix.class.name).to eq("Array")
             expect(matrix[0].class.name).to eq("Array")
@@ -52,7 +64,7 @@ shared_examples_for "theme" do
 
       context "get_matrix" do
         it "returns a matrix" do
-          theme.parts.each do |part|
+          theme.each do |part|
             matrix = part.get_matrix(0)
             expect(matrix.class.name).to eq("Array")
             expect(matrix[0].class.name).to eq("Array")
@@ -61,13 +73,30 @@ shared_examples_for "theme" do
       end
 
       it "has a name" do
-        theme.parts.each do |part|
+        theme.each do |part|
           matrix = part.get_matrix(0)
           expect(part.name.class).to be(String)
           expect(part.name).to_not be_empty
         end
       end
 
+      it "responds to each" do
+        theme.each do |part|
+          expect(part.respond_to?(:each)).to be(true)
+        end
+      end
+
+      it "responds to count" do
+        theme.each do |part|
+          expect(theme.count).to be >0
+        end
+      end
+
+      it "responds to []" do
+        theme.each do |part|
+          expect(part.respond_to?(:[])).to be(true)
+        end
+      end
     end
   end
 end
