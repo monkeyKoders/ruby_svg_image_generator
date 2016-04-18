@@ -1,9 +1,9 @@
 module RubySvgImageGenerator
   class MonkeyAvatars < RubySvgImageGenerator::Theme
 
-    class OverFace < RubySvgImageGenerator::Theme::ColorPart
+    class Skin < RubySvgImageGenerator::Theme::ColorPart
 
-      COLORS = ["#E6AE80", "#EFCDB0"]
+      COLORS = ["#E6AE80", "#EFCDB0", "#EABF8D", "#EEC890"]
       MATRICES = [
         [
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -25,7 +25,7 @@ module RubySvgImageGenerator
       ]
 
       def initialize options={}
-        super "OverFace"
+        super "Skin"
       end
 
     end

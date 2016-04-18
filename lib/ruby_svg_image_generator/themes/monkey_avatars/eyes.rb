@@ -5,7 +5,6 @@ module RubySvgImageGenerator
 
       A = "#FFFFFF"
       B = "#000000"
-
       MATRICES = [
         [
           [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
