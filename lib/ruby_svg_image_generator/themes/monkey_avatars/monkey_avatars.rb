@@ -5,8 +5,8 @@ module RubySvgImageGenerator
   class MonkeyAvatars < RubySvgImageGenerator::Theme
 
     def initialize options={}
-      super "monkey avatars", 11, 12, options
-      @parts = [] << Background.new << Face.new << OverFace.new << Ears.new << Mouth.new << Eyes.new << Nose.new << Hair.new
+      super "monkey avatars", 13, 15, options
+      @parts = [] << Face.new << OverFace.new << Eyes.new << Mouth.new << Nose.new#<< Ears.new  << Hair.new
     end
 
   end
