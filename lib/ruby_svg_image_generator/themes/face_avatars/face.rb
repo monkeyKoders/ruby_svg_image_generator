@@ -1,5 +1,5 @@
 module RubySvgImageGenerator
-  class HumanAvatars < RubySvgImageGenerator::Theme
+  class FaceAvatars < RubySvgImageGenerator::Theme
 
     class Face < RubySvgImageGenerator::Theme::ColorPart
 
