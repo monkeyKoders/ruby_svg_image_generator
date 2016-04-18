@@ -20,6 +20,8 @@ module RubySvgImageGenerator
     :theme => T_TEST_THEME
   }
 
+  THEMES = [T_HUMAN_AVATARS, T_FACE_AVATARS, T_TEST_THEME]
+
   # create a random image svg and save it to the given filename
   #
   # Example:

@@ -59,5 +59,9 @@ module RubySvgImageGenerator
       @n_rows
     end
 
+    def parts
+      @parts
+    end
+
   end
 end
