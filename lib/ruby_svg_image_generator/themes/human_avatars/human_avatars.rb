@@ -7,7 +7,7 @@ module RubySvgImageGenerator
 
     def initialize options={}
       super "human avatars", 13, 18, options
-      @parts = [] << Background.new << Background2.new << Body.new << Mouth.new << Eyes.new <<
+      @parts = [] << Background.new  << Body.new << Mouth.new << Eyes.new <<
       Hair.new << Shirt.new << Shoes.new << Pants.new << Complements.new
     end
 
