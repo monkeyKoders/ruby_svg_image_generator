@@ -6,7 +6,7 @@ shared_examples_for "theme" do
 
   describe "Theme" do
 
-    context "get_random_matrix" do
+    describe "get_random_matrix" do
 
       it "returns a random matrix" do
         matrix = theme.get_random_matrix
@@ -15,11 +15,10 @@ shared_examples_for "theme" do
       end
     end
 
-    context "get_matrix" do
+    describe "get_matrix" do
 
       it "returns a matrix" do
-        matrix = theme.get_matrix(:parts => theme.collect{|part| 0 } )
-        p matrix
+        matrix = theme.get_matrix(theme.collect{|part| 0 } )
         expect(matrix.class.name).to eq("Array")
         expect(matrix[0].class.name).to eq("Array")
       end

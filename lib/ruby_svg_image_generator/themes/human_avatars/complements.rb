@@ -185,7 +185,7 @@ module RubySvgImageGenerator
       ]
 
       def initialize options={}
-        super "Mouth"
+        super "complements"
       end
 
     end

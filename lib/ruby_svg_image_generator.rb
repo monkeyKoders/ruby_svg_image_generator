@@ -8,7 +8,6 @@ require 'ruby_svg_image_generator/color_part'
 require 'ruby_svg_image_generator/themes/face_avatars/face_avatars'
 require 'ruby_svg_image_generator/themes/human_avatars/human_avatars'
 require 'ruby_svg_image_generator/themes/test_theme/test_theme'
-#require 'debugger'
 
 module RubySvgImageGenerator
 
@@ -20,6 +19,8 @@ module RubySvgImageGenerator
     :theme => T_TEST_THEME
   }
 
+  THEMES = [T_HUMAN_AVATARS, T_FACE_AVATARS, T_TEST_THEME]
+
   # create a random image svg and save it to the given filename
   #
   # Example:
@@ -29,7 +30,7 @@ module RubySvgImageGenerator
   # @param filename [string] the full path and filename to save the image svg to
   # @param options [hash] additional options for the image
   #
-  def self.create_and_save_file(filename, title, options={})
+  def self.create_and_save(filename, title, options={})
 
     # create the svg image string
     svg = create(title, options)
@@ -51,13 +52,40 @@ module RubySvgImageGenerator
 
     options = DEFAULT_OPTIONS.merge(options)
 
-    theme = RubySvgImageGenerator.const_get(options[:theme]).new options
+    theme = RubySvgImageGenerator.const_get(options[:theme]).new
+
+    # generate the cells matrix with image
+    matrix = theme.get_matrix options[:parts]
+
+    # generate and return the svg string with matrix values
+    RubyMatrixToSvg.matrix_to_svg title, matrix
+  end
+
+  def self.create_random(title, options={})
+
+    options = DEFAULT_OPTIONS.merge(options)
+
+    theme = RubySvgImageGenerator.const_get(options[:theme]).new
 
     # generate the cells matrix with image
     matrix = theme.get_random_matrix
 
     # generate and return the svg string with matrix values
     RubyMatrixToSvg.matrix_to_svg title, matrix
+  end
+
+  def self.create_random_and_save(filename, title, options={})
+
+    # create the svg image string
+    svg = create_random(title, options)
+
+    # save svg to file filename
+    File.open(filename, 'wb') { |f| f.write(svg) }
+
+  end
+
+  def self.get_theme_instance theme
+    return RubySvgImageGenerator.const_get(theme).new
   end
 
 end

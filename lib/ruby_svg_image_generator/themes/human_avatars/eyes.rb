@@ -29,7 +29,7 @@ module RubySvgImageGenerator
       ]
 
       def initialize options={}
-        super "Background"
+        super "eyes"
       end
 
     end
