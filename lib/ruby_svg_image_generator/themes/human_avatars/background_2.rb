@@ -47,7 +47,7 @@ module RubySvgImageGenerator
         ]
       ]
 
-      def initialize options={}
+      def initialize
         super "background 2"
       end
 

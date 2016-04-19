@@ -98,7 +98,7 @@ module RubySvgImageGenerator
         ]
       ]
 
-      def initialize options={}
+      def initialize
         super "Hair"
 
       end

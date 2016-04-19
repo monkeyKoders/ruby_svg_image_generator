@@ -2,7 +2,7 @@ module RubySvgImageGenerator
   class Theme
     class Part
       include Enumerable
-      def initialize(name, options={})
+      def initialize(name)
         @name = name
       end
 

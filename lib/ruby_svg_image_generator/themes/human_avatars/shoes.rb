@@ -85,7 +85,7 @@ module RubySvgImageGenerator
         ]
       ]
 
-      def initialize options={}
+      def initialize
         super "shoes"
       end
 

@@ -26,7 +26,7 @@ module RubySvgImageGenerator
         ]
       ]
 
-      def initialize options={}
+      def initialize
         super "Face"
       end
 
