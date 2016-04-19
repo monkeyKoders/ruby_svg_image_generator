@@ -2,8 +2,8 @@ module RubySvgImageGenerator
   class Theme
     class ColorPart < Part
 
-      def initialize(name, options={})
-        super name, options
+      def initialize(name)
+        super name
       end
 
       def each &block

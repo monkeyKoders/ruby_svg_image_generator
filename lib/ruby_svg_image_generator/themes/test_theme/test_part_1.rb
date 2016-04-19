@@ -23,7 +23,7 @@ module RubySvgImageGenerator
         ]
       ]
 
-      def initialize options={}
+      def initialize
         super "test_part_1"
       end
 
