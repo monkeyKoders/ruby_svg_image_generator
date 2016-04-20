@@ -7,19 +7,21 @@ require 'ruby_svg_image_generator/color_part'
 
 require 'ruby_svg_image_generator/themes/face_avatars/face_avatars'
 require 'ruby_svg_image_generator/themes/human_avatars/human_avatars'
+require 'ruby_svg_image_generator/themes/monkey_avatars/monkey_avatars'
 require 'ruby_svg_image_generator/themes/test_theme/test_theme'
 
 module RubySvgImageGenerator
 
   T_HUMAN_AVATARS = :HumanAvatars
   T_FACE_AVATARS = :FaceAvatars
+  T_MONKEY_AVATARS = :MonkeyAvatars
   T_TEST_THEME = :TestTheme
 
   DEFAULT_OPTIONS = {
     :theme => T_TEST_THEME
   }
 
-  THEMES = [T_HUMAN_AVATARS, T_FACE_AVATARS, T_TEST_THEME]
+  THEMES = [T_HUMAN_AVATARS, T_FACE_AVATARS, T_TEST_THEME, T_MONKEY_AVATARS]
 
   # create an image svg and save it to the given filename
   #
