@@ -1,5 +1,4 @@
-Dir.glob(File.dirname(File.absolute_path(__FILE__)) + '/*.rb') {|file| require file}
-
+Dir[File.dirname(__FILE__)+'/*.rb'].each{ |f| require f }
 
 module RubySvgImageGenerator
   class MonkeyAvatars < RubySvgImageGenerator::Theme
