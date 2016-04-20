@@ -1,5 +1,5 @@
 module RubySvgImageGenerator
-  class HumanAvatars < RubySvgImageGenerator::Theme
+  class FaceAvatars < RubySvgImageGenerator::Theme
 
     class Face < RubySvgImageGenerator::Theme::ColorPart
 
@@ -26,7 +26,7 @@ module RubySvgImageGenerator
         ]
       ]
 
-      def initialize options={}
+      def initialize
         super "Face"
       end
 

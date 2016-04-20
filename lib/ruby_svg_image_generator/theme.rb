@@ -3,7 +3,7 @@ module RubySvgImageGenerator
 
     include Enumerable
 
-    def initialize(name, n_cols, n_rows, options={})
+    def initialize(name, n_cols, n_rows)
       @name = name
       @n_cols = n_cols
       @n_rows = n_rows
@@ -12,15 +12,15 @@ module RubySvgImageGenerator
     end
 
     def each &block
-      @parts.each{|part| block.call(part)}
+      @parts.each{|part| yield part}
     end
 
     def [](index)
       return @parts[index]
     end
 
-    def get_matrix(options={})
-      merge_parts(options[:parts].collect{|part| @parts[part].get_matrix(part) })
+    def get_matrix parts
+      merge_parts(parts.collect{|part| @parts[part].get_matrix(part) })
     end
 
     def get_random_matrix
