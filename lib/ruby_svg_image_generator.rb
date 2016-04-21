@@ -8,6 +8,7 @@ require 'ruby_svg_image_generator/color_part'
 require 'ruby_svg_image_generator/themes/face_avatars/face_avatars'
 require 'ruby_svg_image_generator/themes/human_avatars/human_avatars'
 require 'ruby_svg_image_generator/themes/monkey_avatars/monkey_avatars'
+require 'ruby_svg_image_generator/themes/landscape_theme/landscape_theme'
 require 'ruby_svg_image_generator/themes/test_theme/test_theme'
 
 module RubySvgImageGenerator
@@ -15,6 +16,7 @@ module RubySvgImageGenerator
   T_HUMAN_AVATARS = :HumanAvatars
   T_FACE_AVATARS = :FaceAvatars
   T_MONKEY_AVATARS = :MonkeyAvatars
+  T_LANDSCAPE_THEME = :LandscapeTheme
   T_TEST_THEME = :TestTheme
 
   DEFAULT_OPTIONS = {
