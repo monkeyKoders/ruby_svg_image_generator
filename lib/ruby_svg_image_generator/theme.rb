@@ -20,7 +20,11 @@ module RubySvgImageGenerator
     end
 
     def get_matrix parts
-      merge_parts(parts.collect{|part| @parts[part].get_matrix(part) })
+      l_parts = []
+      parts.each_with_index  do |part, index|
+        l_parts << self[index].get_matrix(part)
+      end
+      merge_parts(l_parts)
     end
 
     def get_random_matrix

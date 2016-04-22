@@ -43,7 +43,7 @@ describe RubySvgImageGenerator do
       RubySvgImageGenerator::THEMES.each do |theme|
         theme_inst = RubySvgImageGenerator.get_theme_instance theme
         parts = theme_inst.collect{|part| 0 }
-        result = RubySvgImageGenerator.create_random_and_save "test_file.svg", "test_image", :theme => theme, :parts=>parts
+        result = RubySvgImageGenerator.create_and_save "test_file.svg", "test_image", :theme => theme, :parts=>parts
         expect(result).to be_truthy
       end
     end
