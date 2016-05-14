@@ -5,4 +5,4 @@ require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 
-Dir.glob('tasks/**/*.rake').each(&method(:import))
+Dir.glob('lib/tasks/**/*.rake').each(&method(:import))
