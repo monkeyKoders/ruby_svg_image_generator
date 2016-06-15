@@ -25,7 +25,7 @@ module RubySvgImageGenerator
     :theme => T_TEST_THEME
   }
 
-  THEMES = [T_HUMAN_AVATARS, T_FACE_AVATARS, T_TEST_THEME, T_MONKEY_AVATARS, T_ROBOT_AVATARS]
+  THEMES = [T_HUMAN_AVATARS, T_FACE_AVATARS, T_LANDSCAPE_THEME, T_MONKEY_AVATARS, T_ROBOT_AVATARS]
 
   # create an image svg and save it to the given filename
   #
