@@ -4,9 +4,13 @@
 [![Coverage Status](https://coveralls.io/repos/github/monkeyKoders/ruby_svg_image_generator/badge.svg?branch=master)](https://coveralls.io/github/monkeyKoders/ruby_svg_image_generator?branch=master)
 [![Code Climate](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator/badges/gpa.svg)](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_svg_image_generator`. To experiment with that code, run `bin/console` for an interactive prompt.
+ruby_svg_image_generator is a great gem, created for you but especially for your web application users.
 
-TODO: Delete this and the text above, and describe your gem
+It is a SVG avatars generator gem based on themes which can be designed by users but also you can find some great pre-designed themes on it.
+
+## Demo App
+
+We have implemented a demo app for you to try out: [Demo App](http://ruby_svg_generator.monkeykoders.net)
 
 ## Installation
 
@@ -26,18 +30,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a random svg image saved on the file system.
 
-## Development
+    RubySvgImageGenerator.create_random_and_save("file_name.svg", "file_name, options={})
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+Create a custom svg image saved on the file system.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    RubySvgImageGenerator.create_and_save("file_name.svg", "file_name, options={})
+
+    where **options** is the theme constant name selected to create your svg avatar.
+
+    Example:
+      options{:theme => T_HUMAN_AVATARS}
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/ruby_svg_image_generator/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Bug reports and pull requests are welcome on GitHub at https://github.com/santiriera626/ruby_randimage. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

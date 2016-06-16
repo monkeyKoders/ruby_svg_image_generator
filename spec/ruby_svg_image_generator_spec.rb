@@ -3,7 +3,7 @@ describe RubySvgImageGenerator do
 
   it "dummy" do
     40.times do |i|
-      RubySvgImageGenerator.create_random_and_save "test_#{i}.svg" , "test_#{i}", :theme => RubySvgImageGenerator::T_HUMAN_AVATARS
+      RubySvgImageGenerator.create_random_and_save "test_#{i}.svg" , "test_#{i}", :theme => RubySvgImageGenerator::T_ROBOT_AVATARS
     end
   end
 
