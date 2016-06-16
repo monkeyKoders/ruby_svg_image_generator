@@ -1,5 +1,4 @@
 require 'fileutils'
-require 'byebug'
 
 namespace :svg_generator do
   desc "Create new gem theme"
