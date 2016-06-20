@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/monkeyKoders/ruby_svg_image_generator/badge.svg?branch=master)](https://coveralls.io/github/monkeyKoders/ruby_svg_image_generator?branch=master)
 [![Code Climate](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator/badges/gpa.svg)](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator)
 
-ruby_svg_image_generator is a great gem, created for you but especially for your web application users.
+ruby_svg_image_generator is a great gem, created for you but specially for your web application users.
 
 It is a SVG avatars generator gem based on themes which can be designed by users but also you can find some great pre-designed themes on it.
 
@@ -38,6 +38,8 @@ Create a random svg image from selected theme
     options: (Hash)
       -  theme: (String) Theme where you get the random image
 
+    Example: RubySvgImageGenerator.create_random('awesome_random_avatar', {theme: RubySvgImageGenerator::T_MONKEY_AVATARS})
+
 
 Create a random svg image from selected theme and save on the file system
 
@@ -48,6 +50,8 @@ Create a random svg image from selected theme and save on the file system
     options: (Hash)
       -  theme: (String) Theme where you get the random image
 
+    Example: RubySvgImageGenerator.create_random_and_save('image.svg', 'awesome_random_avatar', {theme: RubySvgImageGenerator::T_LANDSCAPE_THEME})
+
 Create an image from selected theme and specific values for parts
 
     RubySvgImageGenerator.create(title, options={})
@@ -56,6 +60,9 @@ Create an image from selected theme and specific values for parts
     options: (Hash)
       -  theme: (String) Theme where you get the image
       -  parts: (Array) Array of index of parts' values which compose the theme
+
+    Example: RubySvgImageGenerator.create('awesome_avatar', {theme: RubySvgImageGenerator::T_FACE_AVATARS, parts: [0, 1, 5, 0, 1]})
+
 
 Create an image from selected theme with specific values for parts and save on the file system
 
@@ -66,6 +73,8 @@ Create an image from selected theme with specific values for parts and save on t
     options: (Hash)
       -  theme: (String) Theme where you get the image
       -  parts: (Array) Array of index of parts' values which compose the theme
+
+    Example: RubySvgImageGenerator.create('face_avatar.svg', 'awesome_avatar', {theme: RubySvgImageGenerator::T_FACE_AVATARS, parts: [0, 1, 5, 0, 1]})
 
 ## Contributing
 
