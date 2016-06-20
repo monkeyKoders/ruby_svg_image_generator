@@ -1,5 +1,28 @@
 # RubySvgImageGenerator
 
+<img src="http://ruby_svg_generator.monkeykoders.net/images/face0.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/face1.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/face2.svg" border="1" width="120">
+
+<img src="http://ruby_svg_generator.monkeykoders.net/images/human0.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/human1.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/human2.svg" border="1" width="120">
+
+<img src="http://ruby_svg_generator.monkeykoders.net/images/landscape0.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/landscape1.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/landscape2.svg" border="1" width="120">
+
+<img src="http://ruby_svg_generator.monkeykoders.net/images/monkey0.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/monkey1.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/monkey2.svg" border="1" width="120">
+
+<img src="http://ruby_svg_generator.monkeykoders.net/images/robots0.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/robots1.svg" border="1" width="120">
+<img src="http://ruby_svg_generator.monkeykoders.net/images/robots2.svg" border="1" width="120">
+
+
+
+
 [![Build Status](https://travis-ci.org/monkeyKoders/ruby_svg_image_generator.svg?branch=master)](https://travis-ci.org/monkeyKoders/ruby_svg_image_generator)
 [![Coverage Status](https://coveralls.io/repos/github/monkeyKoders/ruby_svg_image_generator/badge.svg?branch=master)](https://coveralls.io/github/monkeyKoders/ruby_svg_image_generator?branch=master)
 [![Code Climate](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator/badges/gpa.svg)](https://codeclimate.com/github/monkeyKoders/ruby_svg_image_generator)
