@@ -30,22 +30,46 @@ Or install it yourself as:
 
 ## Usage
 
-Create a random svg image saved on the file system.
+Create a random svg image from selected theme
 
-    RubySvgImageGenerator.create_random_and_save("file_name.svg", "file_name, options={})
+    RubySvgImageGenerator.create_random(title, options={})
 
-Create a custom svg image saved on the file system.
+    title: (String) Created SVG image name
+    options: (Hash)
+      -  theme: (String) Theme where you get the random image
 
-    RubySvgImageGenerator.create_and_save("file_name.svg", "file_name, options={})
 
-    where **options** is the theme constant name selected to create your svg avatar.
+Create a random svg image from selected theme and save on the file system
 
-    Example:
-      options{:theme => T_HUMAN_AVATARS}
+    RubySvgImageGenerator.create_random_and_save(filename, title, options={})
+
+    filename: (String): Created SVG image file name
+    title: (String) Created SVG image name
+    options: (Hash)
+      -  theme: (String) Theme where you get the random image
+
+Create an image from selected theme and specific values for parts
+
+    RubySvgImageGenerator.create(title, options={})
+
+    title: (String) Created SVG image name
+    options: (Hash)
+      -  theme: (String) Theme where you get the image
+      -  parts: (Array) Array of index of parts' values which compose the theme
+
+Create an image from selected theme with specific values for parts and save on the file system
+
+    RubySvgImageGenerator.create_and_save(filename, title, options={})
+
+    filename: (String): Created SVG image file name
+    title: (String) Created SVG image name
+    options: (Hash)
+      -  theme: (String) Theme where you get the image
+      -  parts: (Array) Array of index of parts' values which compose the theme
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/santiriera626/ruby_randimage. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/monkeyKoders/ruby_svg_image_generator. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
